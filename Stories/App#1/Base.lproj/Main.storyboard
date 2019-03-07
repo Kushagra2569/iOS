@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="App_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="abstract-astrology-astronomy-1376766" translatesAutoresizingMaskIntoConstraints="NO" id="Tn9-jl-83B">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4t6-3d-M1x">
+                                <rect key="frame" x="25" y="45" width="270" height="220"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="SYb-8C-Q0G"/>
+                                </constraints>
+                                <string key="text">Some Example Text That Should be Long Enough to test that this label size can handle all the Texts Btw why are you still reading this ?</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" red="1" green="0.99830168490000004" blue="0.99726438520000005" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.1310912222" green="0.1324400604" blue="0.13937015829999999" alpha="1" colorSpace="deviceRGB"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="BxZ-DA-9eh">
+                                <rect key="frame" x="16" y="314" width="294" height="124"/>
+                                <state key="normal" title="Option #"/>
+                                <connections>
+                                    <action selector="optionPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gMF-ZY-uw3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="UVS-fJ-S3G">
+                                <rect key="frame" x="16" y="427" width="294" height="121"/>
+                                <state key="normal" title="i dont have many options i mean i dont know if he is a murderer"/>
+                                <connections>
+                                    <action selector="optionPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nrv-dB-awo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="BxZ-DA-9eh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="1Sf-FE-TPh"/>
+                            <constraint firstItem="4t6-3d-M1x" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="1hB-af-ujg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4t6-3d-M1x" secondAttribute="trailing" constant="25" id="3vz-WZ-LDP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="UVS-fJ-S3G" secondAttribute="bottom" constant="20" id="8ya-8p-bxW"/>
+                            <constraint firstItem="UVS-fJ-S3G" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="AhJ-5S-Qfb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UVS-fJ-S3G" secondAttribute="trailing" constant="10" id="CUv-Es-mhf"/>
+                            <constraint firstItem="4t6-3d-M1x" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="Mdy-CR-675"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="BxZ-DA-9eh" secondAttribute="bottom" constant="130" id="ldd-GV-5Dh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BxZ-DA-9eh" secondAttribute="trailing" constant="10" id="mNC-lI-YOb"/>
+                            <constraint firstItem="BxZ-DA-9eh" firstAttribute="top" secondItem="4t6-3d-M1x" secondAttribute="bottom" constant="49" id="sB8-NU-feL"/>
+                            <constraint firstItem="UVS-fJ-S3G" firstAttribute="top" secondItem="4t6-3d-M1x" secondAttribute="bottom" constant="162" id="vlA-Vt-kui"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="button1" destination="BxZ-DA-9eh" id="iPV-8A-8qg"/>
+                        <outlet property="button2" destination="UVS-fJ-S3G" id="Gkb-5R-JoI"/>
+                        <outlet property="storyText" destination="4t6-3d-M1x" id="7Cq-JD-LLw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.125" y="133.09859154929578"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="abstract-astrology-astronomy-1376766" width="2886" height="4329"/>
+    </resources>
+</document>
